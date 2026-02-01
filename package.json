@@ -1,0 +1,65 @@
+{
+  "name": "openclaw",
+  "displayName": "openclaw",
+  "description": "OpenClaw connection status manager",
+  "version": "0.0.4",
+  "publisher": "gguf",
+  "author": {
+    "name": "gguf",
+    "email": "info@gguf.us"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/mochiyaki/openclaw",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mochiyaki/openclaw.git"
+  },
+  "icon": "assets/images/icon.png",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Machine Learning",
+		"Other"
+  ],
+  "keywords": [
+		"openclaw"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "openclaw.showMenu",
+        "title": "OpenClaw: Show Menu"
+      }
+    ],
+    "configuration": {
+      "title": "OpenClaw",
+      "properties": {
+        "openclaw.autoConnect": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically connect to OpenClaw on startup"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0",
+    "typescript": "^4.9.3"
+  }
+}
