@@ -57,7 +57,7 @@ graph TD
 ```
 
 ![screenshot](https://raw.githubusercontent.com/mochiyaki/pigbot/master/demo2.gif)
-*write a color picker for picking a random color for background
+*fetch the weather info in SF today; write a color picker for picking a random color for background
 
 ## Workflow
 
