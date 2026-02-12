@@ -3,6 +3,8 @@
 All notable changes to the "claw" and/or "openclaw" extension will be documented in this file.
 
 ## Releases
+- 0.1.0
+  - use ggc oc for responsive tui
 - 0.0.9
   - minor adjustment
 - 0.0.8

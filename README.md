@@ -1,8 +1,23 @@
 # Claw Extension
 
-A simple VS Code extension that manages Claw connection status via a status bar item.
+A simple extension that manages Claw connection status via a status bar item.
 
 ![screenshot](https://raw.githubusercontent.com/mochiyaki/pigbot/master/openclaw.gif)
+
+## Prerequisites
+
+- Visual Studio Code version 1.74.0 or higher
+- [openclaw](https://www.npmjs.com/package/openclaw) installed; if not, install it via npm:
+
+```bash
+npm install -g openclaw
+```
+
+- [gguf-connector](https://pypi.org/project/gguf-connector/) installed; if not, install it via pip/pip3:
+
+```bash
+pip install gguf-connector
+```
 
 ## Features
 
@@ -12,11 +27,10 @@ A simple VS Code extension that manages Claw connection status via a status bar 
   - `$(check) Claw` - Connected to OpenClaw
 
 - **Menu Selection Scheme**: Re-structured to provide command menu with options:
-  - Status
-  - Onboard
-  - Gateway
-  - Terminal
   - Dashboard
+  - Gateway
+  - Onboard
+  - Terminal
 
 - **OS Detection**: Automatically detects the operating system and uses:
   - `claw status` on Windows (wsl)
@@ -46,9 +60,9 @@ graph TD
     B --> C[Status Bar Item]
     C --> D{Menu Selection}
     D --> E[Status Command]
+    D --> H[Dashboard Command]
     D --> F[Onboard Command]
     D --> G[Gateway Command]
-    D --> H[Dashboard Command]
     E --> I[WSL Terminal]
     F --> I
     G --> I

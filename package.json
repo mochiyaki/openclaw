@@ -1,18 +1,17 @@
 {
   "name": "claw",
   "displayName": "claw",
-  "description": "Claw connection status manager",
-  "version": "0.0.9",
+  "description": "claw connection status manager",
+  "version": "0.1.1",
   "publisher": "gguf",
   "author": {
-    "name": "gguf",
-    "email": "info@gguf.us"
+    "name": "gguf"
   },
   "license": "MIT",
-  "homepage": "https://github.com/mochiyaki/clawdbot",
+  "homepage": "https://github.com/mochiyaki/claw",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mochiyaki/clawdbot.git"
+    "url": "https://github.com/mochiyaki/claw.git"
   },
   "icon": "assets/images/icon.png",
   "engines": {
@@ -41,7 +40,7 @@
         "claw.autoConnect": {
           "type": "boolean",
           "default": false,
-          "description": "Automatically connect to Claw on startup"
+          "description": "Automatically connect to OpenClaw on startup"
         }
       }
     }
