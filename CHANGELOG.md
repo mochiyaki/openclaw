@@ -3,6 +3,8 @@
 All notable changes to the "claw" and/or "openclaw" extension will be documented in this file.
 
 ## Releases
+- 0.1.6
+  - guess the keyword is not necessary
 - 0.1.5
   - new demo showing the magnet on status bar
 - 0.1.4

@@ -108,3 +108,5 @@ graph TD
 
 ## License
 MIT
+
+![screenshot](https://raw.githubusercontent.com/mochiyaki/pigbot/master/claw.jpg)
