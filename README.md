@@ -32,6 +32,7 @@ pip install gguf-connector
     - Onboard
     - Pair up
       - no headache and simplify the pairing process
+    - Doctor
     - Console
   - Gateway
     - Run
@@ -48,7 +49,7 @@ pip install gguf-connector
 - **Auto-Connect**: Optional setting to automatically connect on startup (disabled by default)
 
 - **Terminal Management**: Creates or reuses terminal based on OS detection
-- **Command Execution**: Supports multiple commands (dashboard, onboard, gateway, etc.)
+- **Command Execution**: Supports multiple commands (dashboard, gateway, etc.)
 
 ![screenshot](https://raw.githubusercontent.com/mochiyaki/pigbot/master/openclaw.gif)
 

@@ -64,6 +64,7 @@ export function activate(context: vscode.ExtensionContext) {
                     "Setup Options",
                     "Onboard",
                     "Pair up",
+                    "Doctor",
                     "Console"
                 );
 
@@ -71,6 +72,8 @@ export function activate(context: vscode.ExtensionContext) {
                     await runClawCommand(context, 'openclaw onboard');
                 } else if (setupSelection === 'Console') {
                     await runClawCommand(context, 'openclaw tui');
+                } else if (setupSelection === 'Doctor') {
+                    await runClawCommand(context, 'openclaw doctor');
                 } else if (setupSelection === 'Pair up') {
                     showPairingMenu(context);
                 }

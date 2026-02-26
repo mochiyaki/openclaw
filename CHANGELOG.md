@@ -3,6 +3,8 @@
 All notable changes to the "claw" and/or "openclaw" extension will be documented in this file.
 
 ## Releases
+- 0.3.2
+  - add doctor button under setup to help migration from clawdbot/moltbot or/and fix issue(s)
 - 0.3.1
   - wsl note and doc update
 - 0.3.0
